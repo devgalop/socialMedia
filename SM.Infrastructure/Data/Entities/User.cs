@@ -21,4 +21,6 @@ public class User
     public string PasswordHashed { get; set; } = string.Empty;
 
     public string ImageURL { get; set; } = string.Empty;
+
+    public IEnumerable<UserRelationship> Friendships { get; set; } = null!;
 }

@@ -11,7 +11,8 @@ public class UserRelationship
 
     public DateTime FriendDate { get; set; } = DateTime.Now;
 
-    public User Friend1 { get; set; } = new User();
+    public int FriendId { get; set; }
 
-    public User Friend2 { get; set; } = new User();
+    public User Friend { get; set; } = new User();
+
 }

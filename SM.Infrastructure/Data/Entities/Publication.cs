@@ -17,5 +17,9 @@ public class Publication
 
     public DateTime PublishedAt { get; set; } = DateTime.Now;
 
+    public int? AuthorId { get; set; }
+
     public User Author { get; set; } = new User();
+
+    public IEnumerable<PublicationComment> Comments { get; set; } = null!;
 }
